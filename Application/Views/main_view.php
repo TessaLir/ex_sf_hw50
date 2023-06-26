@@ -1,4 +1,4 @@
-<h1><?= !$data['name'] ? '' : ($data['name'] . '<br />') ?>Добро пожаловать!</h1> 
+<h1><?= !$data['user']['name'] ? '' : ($data['user']['name'] . '<br />') ?>Добро пожаловать!</h1> 
 
 <p class="block-hello">
     Добро пожаловать в <span class="upper">мега</span> супер-пупер галерею!
