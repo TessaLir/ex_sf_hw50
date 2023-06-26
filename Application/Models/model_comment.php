@@ -77,6 +77,13 @@
             return $comment['COUNT(*)'] ?? 0;
         }
 
+        public function delete_cards_comment ($id)
+        {
+            $stmt = $this->db->prepare(COMMENTS_DELETE_ELEMENT);
+            $stmt->bindParam(':id', $id);
+            $stmt->execute();
+        }
+
         public function delete_cards_element_comments ($card_id)
         {
             $stmt = $this->db->prepare(COMMENTS_DELETE_CARDS_ELEMENTS);

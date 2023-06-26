@@ -15,6 +15,7 @@
     define('CARDS_ADD_ITEM', "INSERT INTO cards (creator_id, name, path) VALUES (:userId, :name, :path)");
 
     define('COMMENTS_GET_LIST', 'SELECT * FROM comments ORDER BY create_dt DESC');
+    define('COMMENTS_DELETE_ELEMENT', "DELETE FROM comments WHERE id = :id");
     define('COMMENTS_DELETE_CARDS_ELEMENTS', "DELETE FROM comments WHERE card_id = :card_id");
     define('COMMENTS_GET_LIST_FOR_CARD', 'SELECT * FROM comments WHERE card_id = :card_id ORDER BY create_dt DESC');
     define('COMMENTS_GET_MAX_ID', 'SELECT MAX(id) FROM comments');

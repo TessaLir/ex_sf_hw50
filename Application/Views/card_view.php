@@ -38,6 +38,9 @@
                 <?php foreach($data["comments"] as $comment) : ?>
                     <div class="detail-page__item">
                         <h5>Дата: <?= $comment['create_dt'] ?>; Автор: <?= $comment['user']['name'] ?>;</h5>
+                        <?php if ($comment['user_id'] == $data['user']['id']) : ?>
+                            <a class="detail-page__item-delete" href="?comment_delete=<?= $comment['id'] ?>">Удалить комментарий</a>
+                        <?php endif; ?>
                         <p><?= $comment['data'] ?></p>
                     </div>
                 <?php endforeach; ?>
