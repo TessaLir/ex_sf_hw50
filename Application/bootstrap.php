@@ -1,8 +1,8 @@
 <?php
-    require_once 'core/model.php'; 
-    require_once 'core/view.php'; 
-    require_once 'core/controller.php'; 
-    require_once 'core/route.php'; 
+    require_once 'Core/model.php'; 
+    require_once 'Core/view.php'; 
+    require_once 'Core/controller.php'; 
+    require_once 'Core/route.php'; 
 
     require_once 'Models/model_user.php';
     require_once 'Models/model_card.php';
